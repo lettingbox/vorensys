@@ -25,6 +25,9 @@ $vorensys = new Vorensys($client)
     ->setUsername('USERNAME')
     ->setPassword('PASSWORD');
 $results = $vorensys->submit(new Application('Mr.', 'John', 'Doe', 'human@world.com'));
+
+$vorensys_application_id = $results['id'];
+$vorensys_application_form_url = $result['url']; 
 ```
 
 ### Testing

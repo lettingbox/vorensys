@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65cfc64d-14ba-44b9-8b9f-c1a78a8d9332" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/VorensysTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/VorensysTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,14 +17,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/VorensysTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-              <folding>
-                <element signature="e#45#67#0#PHP" expanded="true" />
-                <element signature="e#422#526#0#PHP" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="611">
+                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -49,13 +48,13 @@
         <option value="$PROJECT_DIR$/src/VorensysClass.php" />
         <option value="$PROJECT_DIR$/tests/ExampleTest.php" />
         <option value="$PROJECT_DIR$/src/VorensysApplicant.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/vorensys.php" />
         <option value="$PROJECT_DIR$/src/Application.php" />
         <option value="$PROJECT_DIR$/src/Vorensys.php" />
-        <option value="$PROJECT_DIR$/src/VorensysServiceProvider.php" />
         <option value="$PROJECT_DIR$/tests/VorensysTest.php" />
+        <option value="$PROJECT_DIR$/src/VorensysServiceProvider.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -222,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556879529253</updated>
-      <workItem from="1556879530372" duration="11079000" />
+      <workItem from="1556879530372" duration="11515000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1556887604629</created>
@@ -245,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556894411768</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1556894454373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556894454373</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first commit">
+      <created>1556894811913</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556894811913</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -281,7 +294,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11079000" />
+    <option name="totallyTimeSpent" value="11515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1090" y="23" width="2110" height="1777" extended-state="0" />
@@ -358,16 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="339">
-            <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VorensysFacade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -392,24 +395,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/VorensysTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="71" column="95" lean-forward="true" selection-start-line="70" selection-start-column="8" selection-end-line="71" selection-end-column="95" />
+          <folding>
+            <element signature="e#45#67#0#PHP" expanded="true" />
+            <element signature="e#422#526#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/VorensysServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="780">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/VorensysTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-          <folding>
-            <element signature="e#45#67#0#PHP" expanded="true" />
-            <element signature="e#422#526#0#PHP" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="611">
+            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
