@@ -3,7 +3,8 @@
     "description": "Vorensys API package",
     "keywords": [
         "lettingbox",
-        "vorensys"
+        "vorensys",
+        "laravel"
     ],
     "homepage": "https://github.com/lettingbox/vorensys",
     "license": "MIT",
