@@ -28,7 +28,7 @@ class VorensysServiceProvider extends ServiceProvider
             return (new Vorensys(new Client))
                 ->setApiKey(config('vorensys.key'))
                 ->setId(config('vorensys.id'))
-                ->setUsername(config('vorensys.id'))
+                ->setUsername(config('vorensys.username'))
                 ->setPassword(config('vorensys.password'));
         });
     }

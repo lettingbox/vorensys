@@ -19,8 +19,12 @@ composer require lettingbox/vorensys
 ## Usage
 
 ``` php
-$vorensys = new Lettingbox\Vorensys();
-echo $vorensys->status('ABC1234');
+$vorensys = new Vorensys($client)
+    ->setApiKey('KEY')
+    ->setId('CUST_ID')
+    ->setUsername('USERNAME')
+    ->setPassword('PASSWORD');
+$results = $vorensys->submit(new Application('Mr.', 'John', 'Doe', 'human@world.com'));
 ```
 
 ### Testing
