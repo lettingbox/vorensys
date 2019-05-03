@@ -1,10 +1,8 @@
 <?php
 
-
 namespace Lettingbox\Vorensys;
 
-
-class VorensysApplicant
+class Application
 {
     public $companyName;
     public $title;
@@ -24,6 +22,7 @@ class VorensysApplicant
 
     /**
      * Applicant constructor.
+     *
      * @param $title            string      Tenant’s title
      * @param $firstName        string      Tenant’s first name
      * @param $lastName         string      Tenant’s last name
@@ -38,67 +37,67 @@ class VorensysApplicant
     }
 
     /**
-     * Type of service requested
-     * 1 - credit check only, 2 - full tenant report
+     * Type of service requested:
+     * 1 - credit check only, 2 - full tenant report.
      *
      * @param mixed $serviceType
-     * @return VorensysApplicant
+     * @return Application
      */
-    public function ServiceType(int $serviceType): VorensysApplicant
+    public function ServiceType(int $serviceType): Application
     {
         $this->serviceType = $serviceType;
         return $this;
     }
 
     /**
-     * Tenancy term
-     * 0, 6 or 12
+     * Tenancy term:
+     * 0, 6 or 12.
      * 0 is used for non-tenancy related personal credit checks.
      *
      * @param mixed $tenancyTerm
-     * @return VorensysApplicant
+     * @return Application
      */
-    public function TenancyTerm(int $tenancyTerm): VorensysApplicant
+    public function TenancyTerm(int $tenancyTerm): Application
     {
         $this->tenancyTerm = $tenancyTerm;
         return $this;
     }
 
     /**
-     * Tenant’s landline number
+     * Tenant’s landline number.
      *
      * @param mixed $landLineNumber
-     * @return VorensysApplicant
+     * @return Application
      */
-    public function LandLineNumber($landLineNumber): VorensysApplicant
+    public function LandLineNumber($landLineNumber): Application
     {
         $this->landLineNumber = $landLineNumber;
         return $this;
     }
 
     /**
-     * Tenant’s mobile number (will be used to send a text reminder)
+     * Tenant’s mobile number (will be used to send a text reminder).
      *
      * @param mixed $mobileNumber
-     * @return VorensysApplicant
+     * @return Application
      */
-    public function MobileNumber($mobileNumber): VorensysApplicant
+    public function MobileNumber($mobileNumber): Application
     {
         $this->mobileNumber = $mobileNumber;
         return $this;
     }
 
     /**
-     * Tenancy type
+     * Tenancy type:
      * 0- Sole applicant,
      * 1- Primary applicant in joint tenancy,
-     * 2- Additional applicant in joint tenancy
+     * 2- Additional applicant in joint tenancy.
      *
      * @param bool $primary Is this the primary applicant?
      * @param string $applicationId Identify the application id for the primary applicant
-     * @return VorensysApplicant
+     * @return Application
      */
-    public function JointTenancy(bool $primary, string $applicationId = null): VorensysApplicant
+    public function JointTenancy(bool $primary, string $applicationId = null): Application
     {
         $this->tenancyType = $primary ? 1 : 2;
         $this->applicationId = $applicationId;

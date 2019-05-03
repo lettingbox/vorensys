@@ -23,6 +23,7 @@
     },
     "require-dev": {
         "larapack/dd": "^1.0",
+        "vlucas/phpdotenv": "^3.3",
         "phpunit/phpunit": "^7.0"
     },
     "autoload": {
@@ -36,8 +37,7 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true
