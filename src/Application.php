@@ -46,6 +46,7 @@ class Application
     public function ServiceType(int $serviceType): Application
     {
         $this->serviceType = $serviceType;
+
         return $this;
     }
 
@@ -60,6 +61,7 @@ class Application
     public function TenancyTerm(int $tenancyTerm): Application
     {
         $this->tenancyTerm = $tenancyTerm;
+
         return $this;
     }
 
@@ -72,6 +74,7 @@ class Application
     public function LandLineNumber($landLineNumber): Application
     {
         $this->landLineNumber = $landLineNumber;
+
         return $this;
     }
 
@@ -84,6 +87,7 @@ class Application
     public function MobileNumber($mobileNumber): Application
     {
         $this->mobileNumber = $mobileNumber;
+
         return $this;
     }
 
@@ -101,6 +105,7 @@ class Application
     {
         $this->tenancyType = $primary ? 1 : 2;
         $this->applicationId = $applicationId;
+
         return $this;
     }
 }

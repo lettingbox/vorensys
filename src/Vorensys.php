@@ -4,7 +4,6 @@ namespace Lettingbox\Vorensys;
 
 use Exception;
 use GuzzleHttp\Client;
-use Illuminate\Support\Facades\Config;
 use Lettingbox\Vorensys\Exceptions\VorensysException;
 
 class Vorensys
@@ -25,7 +24,6 @@ class Vorensys
      *
      * @param Application $applicant
      * @return array
-     * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function submit(Application $applicant)
     {
@@ -52,7 +50,7 @@ class Vorensys
                     'ren_prop_mon_rent' => $applicant->propertyMonthlyRent,
                     't_joint' => $applicant->tenancyType,
                     't_pri_job_num' => $applicant->applicationId,
-                ]
+                ],
             ]);
 
             if ($reponse->getStatusCode() !== 200) {
@@ -64,6 +62,7 @@ class Vorensys
             if ($vorensysResponse['status'] != 200) {
                 throw VorensysException::serviceReturnedError(json_encode($vorensysResponse['Validation Failure(s)']));
             }
+
             return ['id' => $vorensysResponse['job number'], 'url' => $vorensysResponse['tenant form URL']];
         } catch (Exception $exception) {
             throw VorensysException::couldNotConnect();
@@ -79,6 +78,7 @@ class Vorensys
     public function setApiKey($key): Vorensys
     {
         $this->key = $key;
+
         return $this;
     }
 
@@ -91,6 +91,7 @@ class Vorensys
     public function setId($id): Vorensys
     {
         $this->id = $id;
+
         return $this;
     }
 
@@ -103,6 +104,7 @@ class Vorensys
     public function setUsername($username): Vorensys
     {
         $this->username = $username;
+
         return $this;
     }
 
@@ -115,6 +117,7 @@ class Vorensys
     public function setPassword($password): Vorensys
     {
         $this->password = $password;
+
         return $this;
     }
 }

@@ -3,14 +3,14 @@
 namespace Lettingbox\Vorensys\Tests;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
+use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use Lettingbox\Vorensys\Exceptions\VorensysException;
-use Lettingbox\Vorensys\Vorensys;
-use Lettingbox\Vorensys\Application;
 use PHPUnit\Framework\TestCase;
+use Lettingbox\Vorensys\Vorensys;
+use GuzzleHttp\Handler\MockHandler;
+use Lettingbox\Vorensys\Application;
+use Lettingbox\Vorensys\Exceptions\VorensysException;
 
 class VorensysTest extends TestCase
 {
@@ -64,7 +64,7 @@ class VorensysTest extends TestCase
                 'status' => '200',
                 'message' => 'submit',
                 'job number' => 'V-VOR171204ZVY',
-                'tenant form URL' => 'https://www.vorensys.com/tg.php?urlKey=31xnzy96svrdfbpg'
+                'tenant form URL' => 'https://www.vorensys.com/tg.php?urlKey=31xnzy96svrdfbpg',
             ])),
         ]);
 

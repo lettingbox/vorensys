@@ -13,7 +13,7 @@ class VorensysServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/vorensys.php' => config_path('vorensys.php'),
+            __DIR__.'/../config/vorensys.php' => config_path('vorensys.php'),
         ], 'config');
     }
 
@@ -22,7 +22,7 @@ class VorensysServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/vorensys.php', 'vorensys');
+        $this->mergeConfigFrom(__DIR__.'/../config/vorensys.php', 'vorensys');
 
         $this->app->bind('vorensys', function () {
             return (new Vorensys(new Client))
