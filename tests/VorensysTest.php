@@ -80,6 +80,7 @@ class VorensysTest extends TestCase
         $mock = new MockHandler($responses);
         $handler = HandlerStack::create($mock);
         $handler->push(Middleware::history($this->historyContainer));
+
         return new Client(['handler' => $handler]);
     }
 }
