@@ -11,19 +11,9 @@ class VorensysServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('vorensys.php'),
-            ], 'config');
-
-            /*
-            $this->loadViewsFrom(__DIR__.'/../resources/views', 'vorensys');
-
-            $this->publishes([
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor/vorensys'),
-            ], 'views');
-            */
-        }
+        $this->publishes([
+            __DIR__.'/../config/vorensys.php' => config_path('vorensys.php'),
+        ], 'config');
     }
 
     /**
@@ -31,6 +21,6 @@ class VorensysServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'vorensys');
+        $this->mergeConfigFrom(__DIR__.'/../config/vorensys.php', 'vorensys');
     }
 }
