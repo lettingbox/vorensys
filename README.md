@@ -1,9 +1,8 @@
 # Laravel Vorensys API Integration
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/lettingbox/vorensys.svg?style=flat-square)](https://packagist.org/packages/lettingbox/:package_name)
-[![Build Status](https://img.shields.io/travis/lettingbox/vorensys/master.svg?style=flat-square)](https://travis-ci.org/lettingbox/:package_name)
-[![Quality Score](https://img.shields.io/scrutinizer/g/lettingbox/vorensys.svg?style=flat-square)](https://scrutinizer-ci.com/g/lettingbox/:package_name)
-[![Total Downloads](https://img.shields.io/packagist/dt/lettingbox/vorensys.svg?style=flat-square)](https://packagist.org/packages/lettingbox/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lettingbox/vorensys.svg?style=flat-square)](https://packagist.org/packages/lettingbox/vorensys)
+[![Build Status](https://img.shields.io/travis/lettingbox/vorensys/master.svg?style=flat-square)](https://travis-ci.org/lettingbox/vorensys)
+[![Total Downloads](https://img.shields.io/packagist/dt/lettingbox/vorensys.svg?style=flat-square)](https://packagist.org/packages/lettingbox/vorensys)
 
 
 A Laravel 5 package to integrate with [Vorensys](https://www.vorensys.com) API.
